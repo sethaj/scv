@@ -1,0 +1,22 @@
+backend:
+  name: test-repo
+media_folder: static/assets
+public_folder: assets
+collections:
+  - name: projects
+    label: Project
+    folder: content/projects
+    create: true
+    fields:
+      - { name: path, label: Path }
+      - { name: date, label: Date, widget: datetime }
+      - { name: title, label: Title }
+      - { name: period, label: Period, widget: string }
+      - { name: body, label: Body, widget: markdown }
+      - name: image
+        label: Image
+        widget: object
+        fields:
+          - { name: file, label: File, widget: image }
+          - { name: alt, label: Alt text }
+          - { name: caption, label: Caption, required: false, default: "" }
