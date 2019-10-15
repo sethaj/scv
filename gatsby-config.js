@@ -16,6 +16,14 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-playground`,
     `gatsby-plugin-netlify-cms`,
+    netlifyCmsPaths,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `assets`,
+        path: `${__dirname}/static/assets`,
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -23,7 +31,13 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    netlifyCmsPaths,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `project`,
+        path: `${__dirname}/content/projects`,
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
@@ -41,20 +55,6 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `project`,
-        path: `${__dirname}/content/projects`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `assets`,
-        path: `${__dirname}/static/assets`,
-      },
-    },
     {
       resolve: `gatsby-transformer-remark`,
       options: {

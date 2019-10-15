@@ -31,7 +31,13 @@ query($slug: String!) {
     	image{
         alt
         caption
-        file
+        file {
+          childImageSharp {
+            fluid {
+              src
+            }
+          }
+        }
       }
     }
   }
