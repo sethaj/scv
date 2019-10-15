@@ -1,5 +1,5 @@
 ---
-path: computer-generated-art-exhibit
+slug: computer-generated-art-exhibit
 date: 2019-10-11T17:10:13.445Z
 title: Computer Generated Art Exhibit
 period: '2005'
