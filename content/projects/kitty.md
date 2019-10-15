@@ -10,8 +10,6 @@ image:
 ---
 There is a kitty in the frontmatter.
 
-
-
 Here is another inline in the markdown.
 
 ![another kitty](/assets/hn.608001072777199715-hello-kitty-kittyrulez-wallpaper_018.gif "another kitty")
